@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞行小鸟</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="startScreen" class="screen">
+            <h1>飞行小鸟</h1>
+            <button id="startButton">开始游戏</button>
+        </div>
+        <div id="gameOverScreen" class="screen hidden">
+            <h2>游戏结束</h2>
+            <p>得分: <span id="finalScore">0</span></p>
+            <p>最高分: <span id="highScore">0</span></p>
+            <button id="restartButton">重新开始</button>
+        </div>
+        <div id="score" class="score">0</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
